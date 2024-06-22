@@ -1,0 +1,3 @@
+interface instrument-manager {
+    get-active-instruments: func(exchange: string, currency: string, kind: string) -> result<list<string>>;
+}
