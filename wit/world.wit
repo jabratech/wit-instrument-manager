@@ -2,9 +2,11 @@ package jabratech:component-instrument-manager;
 
 world component-instrument-manager {
   import wasi:logging/logging;
-  import wasi:keyvalue/store@0.2.0-draft;
+  import wrpc:keyvalue/store@0.2.0-draft;
   import wasi:http/outgoing-handler@0.2.0;
+  import jabratech:common/types;
 
   export wasi:http/incoming-handler@0.2.0;
   export instrument-manager;
+  export wasmcloud:cron/handler;
 }
